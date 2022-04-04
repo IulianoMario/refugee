@@ -403,6 +403,7 @@ WITH
             prd_rent_per_person_cat, 
             rooms, 
             accommodates, 
+            pets_allowed,
             is_bookable, 
             is_online, 
             is_canceled, 
