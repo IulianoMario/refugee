@@ -361,9 +361,9 @@ WITH
             pd_beds_edited_team1, 
             beds, 
             price, 
-            case when pd_ll_rent_per_person is null and prd_rent_per_person_cat is not null then prd_rent_per_person_cat
-                 when pd_ll_rent_per_person is not null and prd_rent_per_person_cat is null then pd_ll_rent_per_person
-                 when pd_ll_rent_per_person is not null and prd_rent_per_person_cat is not null then prd_rent_per_person_cat 
+            case when pd_ll_rent_per_person is null and prd_rent_per_person_categorical is not null then prd_rent_per_person_categorical
+                 when pd_ll_rent_per_person is not null and prd_rent_per_person_categorical is null then pd_ll_rent_per_person
+                 when pd_ll_rent_per_person is not null and prd_rent_per_person_categorical is not null then prd_rent_per_person_categorical 
                  end as rent_per_person_categorical,
             pd_ll_rent_per_person, 
             prd_rent_per_person_categorical, 
